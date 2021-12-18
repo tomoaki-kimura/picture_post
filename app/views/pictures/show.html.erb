@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-9">
+    <%#= "ここに画像が入る" %>
+  </div>
+
+  <div class="col-md-3">
+    <p><b>Title: </b><%= @picture.title %></p>
+    <p><b>Description: </b><%= @picture.description %></p>
+    <p>
+      <%= link_to 'Edit', edit_picture_path(@picture) %> |
+      <%= link_to 'Destroy', @picture, data: { confirm: 'Are you sure?' }, method: :delete %> |
+      <%= link_to 'Back', pictures_path %>
+    </p>
+  </div>
+</div>
