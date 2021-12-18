@@ -4,7 +4,7 @@
   <div class="row">
     <% group.compact.each do |picture| %>
       <div class="col-md-4">
-        <%#= "ここに画像が入る" %>
+        <%= image_tag picture.image.variant(resize: '400x400'), class: 'message-image img-fluid' if picture.image.attached? %>
         <h4><%= link_to picture.description, picture %></h4>
         <%= picture.description %>
       </div>
