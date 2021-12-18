@@ -9,9 +9,9 @@
     <p><b>Title: </b><%= @picture.title %></p>
     <p><b>Description: </b><%= @picture.description %></p>
     <p>
-      <%= link_to 'Edit', edit_idea_path(@picture) %> |
+      <%= link_to 'Edit', edit_picture_path(@picture) %> |
       <%= link_to 'Destroy', @picture, data: { confirm: 'Are you sure?' }, method: :delete %> |
-      <%= link_to 'Back', images_path %>
+      <%= link_to 'Back', pictures_path %>
     </p>
   </div>
 </div>
